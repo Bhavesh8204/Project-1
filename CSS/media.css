@@ -1,0 +1,78 @@
+@media(max-width:500px) {
+
+    /* Header Start */
+
+    .Header {
+        padding: 15px 0px;
+    }
+
+    .Header span a {
+        display: block;
+    }
+
+    .Header .nav ul {
+        display: none;
+    }
+
+    .Header .contact .contact-details {
+        display: none;
+    }
+
+    .Header .logo {
+        width: 100%;
+        /* width: 75%;
+        margin: 0px 58px; */
+    }
+
+    .Header .contact .fa-magnifying-glass,
+    .Header .contact .fa-user,
+    .Header .contact .fa-heart {
+        display: none;
+    }
+
+    .Header .contact .fa-basket-shopping {
+        float: right;
+        margin: -34px -135px 0px 0px;
+    }
+
+    /* Header End */
+
+    /* SLIDER START  */
+
+    .slider {
+        background-position: center center;
+        padding: 110px;
+    }
+
+    .slider h3 {
+        font-size: 16px;
+    }
+
+    .slider h3::after {
+        bottom: -7px;
+        left: 76%;
+    }
+
+    @keyframes banner-effect1 {
+        from {
+            transform:scaleX(0.4);
+        }
+        to {
+            transform:scaleX(0.7);
+        }
+    }
+
+    .slider h1 {
+        font-size: 26px;
+        margin: 8px;
+    }
+
+    .slider button {
+        padding: 5px 13px;
+        margin: 8px;
+        font-size: 12px;
+    }
+
+
+
+}
