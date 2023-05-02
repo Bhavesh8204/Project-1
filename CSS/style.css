@@ -60,7 +60,7 @@
 .Header .nav li {
     display: inline;
     position: relative;
-    padding-bottom: 57px;
+    padding-bottom: 51px;
 }
 
 .Header .nav li::after {
@@ -386,10 +386,7 @@
     display: inline;
 }
 
-.Header .contact .contact-icon li a .fa-magnifying-glass,
-.fa-user,
-.fa-heart,
-.fa-basket-shopping {
+.Header .contact .contact-icon li a .nav-icon {
     color: black;
     float: left;
     margin: 6px 25px 0px 0px;
@@ -401,7 +398,7 @@
     position: relative;
 }
 
-.fa-heart::after {
+.Heart::after {
     content: "0";
     position: absolute;
     top: 5%;
@@ -414,7 +411,7 @@
     border-radius: 10px;
 }
 
-.fa-basket-shopping::after {
+.Baske::after {
     content: "0";
     position: absolute;
     top: 5%;
@@ -586,9 +583,11 @@
 
 .section-1 .part-2 .section-1_part-2_details-1 .section-1_part-2_info-1 {
     position: absolute;
-    top: 35%;
-    left: 13%;
+    width: 360px;
+    top: 25%;
+    left: 10%;
     z-index: 10;
+
 }
 
 .section-1 .part-2 .section-1_part-2_details-1:hover .section-1_part-2_image {
@@ -630,6 +629,24 @@
 }
 
 
+
+.section-1 .part-2 .section-1_part-2_details-1 .section-1_part-2_info-2 h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: Londrina Solid, cursive;
+    font-weight: normal;
+}
+
+.section-1 .part-2 .section-1_part-2_details-1 .section-1_part-2_info-2 h5 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.section-1 .part-2 .section-1_part-2_details-1 .section-1_part-2_info-2 button {
+    background-color: #821E04;
+}
+
 /* SECTION-1 END  */
 
 
@@ -657,7 +674,7 @@
     border: 2px solid white;
     margin: 0px 15px;
     border-radius: 25px;
-    box-shadow: 0px 0px 4px gray;
+    box-shadow: 0px 0px 2px gray;
 }
 
 .card-section-1 .cards .card-image {
@@ -672,7 +689,7 @@
     top: 0;
     left: 0;
     transform: rotateY(180deg);
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 .card-section-1 .cards .card-image .back {
@@ -681,7 +698,33 @@
     left: 0;
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    transition: 0.2s;
+    /* transition: 0.2s; */
+}
+
+.card-section-1 .cards .card-image .Card-Hover-Icons {
+    position: absolute;
+    top: -3%;
+    left: 90%;
+}
+
+.card-section-1 .cards .card-image .Card-Hover-Icons .Card-Icon {
+    color: black;
+    text-align: center;
+    width: 40px;
+    margin: 2px;
+    background: white;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .06);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card-section-1 .cards .card-image .Card-Hover-Icons .Card-Icon:hover {
+    background: #ffa200;
+    color: #fff;
 }
 
 .card-section-1 .cards .card-image .hot,
@@ -710,10 +753,15 @@
 
 .card-section-1 .cards .card-image:hover .back {
     transform: rotateY(180deg);
+
 }
 
 .card-section-1 .cards .card-image:hover .front {
     transform: rotateY(0deg);
+}
+
+.card-section-1 .cards .card-image:hover .Card-Icon {
+    opacity: 1;
 }
 
 .card-section-1 .cards .card-info {
@@ -838,6 +886,7 @@
     background-color: #F28000;
     border-radius: 50px;
     padding: 0px 40px;
+    transition: 0.5s;
 }
 
 .slider-2 .banner-info-2 button:hover {
@@ -881,6 +930,7 @@
 
 .slider-3 .banner-info-3 button {
     background-color: #D95927;
+    transition: 0.5s;
 }
 
 /* SLIDER-3 END  */
@@ -1034,4 +1084,8 @@
     cursor: pointer;
     background: #ffa200;
     border-radius: 50px;
+}
+
+.errow-top-button a:hover {
+    background: #cc8200;
 }
