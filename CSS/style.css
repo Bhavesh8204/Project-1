@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 /* Header Start */
@@ -96,7 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 100%;
+    top: 150%;
     left: 0;
     display: none;
     z-index: 1;
@@ -129,6 +130,7 @@
 
 .Home-Section:hover .home-hovrer-toolkit {
     display: flex;
+    top: 100%;
 }
 
 .shop-hovrer-toolkit {
@@ -424,10 +426,7 @@
     border-radius: 10px;
 }
 
-.Header .contact .contact-icon li a .fa-magnifying-glass:hover,
-.fa-user:hover,
-.fa-heart:hover,
-.fa-basket-shopping:hover {
+.Header .contact .contact-icon li a .nav-icon:hover {
     color: #fcb900;
 }
 
@@ -516,20 +515,23 @@
     width: 77px;
 }
 
-@keyframes image-transform {
-    from {
-        transform: translate(-7px);
-    }
-
-    to {
-        transform: translate(0px);
-    }
-}
-
 .section-1 .part-1 .section-1_part-1_details .section-1_part-1_image:hover {
-    transform: translateX(15px);
     cursor: pointer;
     animation: image-transform 0.3s 4 linear alternate;
+}
+
+@keyframes image-transform {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(10px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
 }
 
 .section-1 .part-1 .section-1_part-1_details .section-1_part-1_info {
