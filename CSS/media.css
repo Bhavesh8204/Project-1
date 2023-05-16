@@ -112,9 +112,18 @@
         padding: 0;
     }
 
+    .footer .part-2 .footer-info-input {
+        padding: 30px 20px;
+    }
+
     .footer .part-2 .footer-info-input p {
+        margin: 10px;
         width: 100%;
-        margin: 10px 2px;
+        text-align: center;
+    }
+
+    .footer .part-2 .footer-info-input input {
+        width: 60%;
     }
 
     .footer .part-2 .footer-info-copyright {
